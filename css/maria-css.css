@@ -1,0 +1,253 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic);
+
+/* * {
+    font-family: 'Lato', Helvetica, sans-serif;
+    line-height: 1.5;
+} */
+
+@font-face {
+    font-family: 'rimouskisemibold';
+    src: url('../fonts/rimouski-sb-webfont.woff2') format('woff2'), url('../fonts/rimouski-sb-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.1);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+html,
+body {
+    /* height: 100%; */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    font-size: 100%;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(176deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 0, 1) 0%, rgba(80, 47, 61, 1) 100%, rgba(63, 41, 50, 1) 100%);
+    background-repeat: no-repeat;
+    color: white;
+    overflow-x: hidden;
+    font-family: 'Lato', Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+h1 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.ma-general {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ma-wide-box {
+    position: relative;
+    width: 100%;
+}
+
+.ma-vertical-center-align {
+    display: flex;
+    align-items: center;
+}
+
+.ma-wide-box::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.ma-side-by-side {
+    display: inline-block;
+}
+
+.ma-side-by-side-space-right {
+    padding-right: 20px;
+}
+
+.ma-one-3rd-wide-column {
+    width: 29.33%;
+    float: left;
+    margin: 0.5rem 2%;
+    min-height: 0.125rem;
+}
+
+.ma-half-wide-column {
+    width: 46%;
+    float: left;
+    margin: 0.5rem 2%;
+    min-height: 0.125rem;
+}
+
+.ma-full-wide-column {
+    width: 96%;
+    float: left;
+    margin: 0.5rem 2%;
+    min-height: 0.125rem;
+}
+
+.ma-purple-borders {
+    border: 2px solid #EA5699;
+    min-height: calc(100vh - 210px);
+}
+
+.ma-menu-height {
+    height: 100px;
+}
+
+.ma-socialicons {
+    display: inline;
+}
+
+.ma-socialicons-space-top {
+    padding-top: 15px;
+}
+
+.ma-logocenter {
+    padding-top: 145px;
+    padding-bottom: 136px;
+    animation-duration: 2s;
+    animation-name: bounceIn;
+    animation: bounceIn 2s;
+}
+
+.ma-button-pointer {
+    cursor: pointer;
+}
+
+.ma-profile-circle-img {
+    border-radius: 50%;
+    max-width: 60%;
+}
+
+.ma-outlined-font {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+    font-size: 30px;
+    font-family: 'rimouskisemibold', sans-serif;
+    color: transparent;
+}
+
+.ma-shadow-title {
+    -webkit-text-stroke-width: 2px;
+    color: white;
+    font-size: 50px;
+    font-family: 'rimouskisemibold', sans-serif;
+    text-shadow: -4px -3px 0px #EF60A3, 4px 3px 0px #67D2DF;
+}
+
+.ma-gray-borders {
+    width: calc(46% - 4px);
+    border: 2px solid gray;
+    padding-top: 50px;
+}
+
+.ma-flex-parent {
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.ma-flex-child {
+    flex: 1;
+}
+
+.ma-styled-button {
+    display: inline-block;
+    cursor: pointer;
+    width: 150px;
+    background-color: white;
+    text-align: center;
+    padding: 5px 10px;
+    box-shadow: -4px -3px 0px #EF60A3, 4px 3px 0px #67D2DF;
+    text-decoration: none;
+}
+
+.ma-text-row {
+    display: flex;
+}
+
+
+
+.responsive {
+    width: 60%;
+    height: auto;
+  }
+
+
+@media only screen and (max-width: 600px) {
+
+    .ma-shadow-title {
+        -webkit-text-stroke-width: 2px;
+        color: white;
+        font-size: 30px;
+        font-family: 'rimouskisemibold', sans-serif;
+        text-shadow: -2px -3px 0px #EF60A3, 2px 3px 0px #67D2DF;
+    }
+
+    .ma-outlined-font {
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: white;
+        font-size: 20px;
+        font-family: 'rimouskisemibold', sans-serif;
+        color: transparent;
+    }
+
+    .ma-mobile-title-paragraph {
+        display: block;
+        width: 90%;
+        margin-bottom:15px;
+    }
+
+
+}
+
+@media only screen and (max-width: 850px) {
+
+.ma-one-3rd-wide-column {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px
+}
+
+.ma-profile-circle-img {
+    width: 38%;
+}
+
+.ma-footer-text{
+    display: none;
+}
+
+.ma-flex-parent {
+    display: block;
+}
+
+}
